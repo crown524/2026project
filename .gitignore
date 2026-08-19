@@ -1,0 +1,36 @@
+# ── 虚拟环境 ──────────────────────────────────────────
+.venv/
+
+# ── Python 编译缓存 ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── 原始数据集（12 GB，不进仓库）─────────────────────
+data/extracted/
+
+# ── API 密钥与机器本地配置 ─────────────────────────────
+# skill_models.json 存明文 api_key，绝对不提交
+data/skill_models.json
+data/anthropic_key.txt
+# local_paths.json 存本机数据集路径，各机器各自持有
+local_paths.json
+
+# ── LLM 调用缓存（体积可观，内含 API 响应）────────────
+outputs/skill_cache/
+
+# ── 派生压缩包 ────────────────────────────────────────
+outputs/features/特征.zip
+
+# ── Claude Code 本地会话配置 ──────────────────────────
+.claude/settings.local.json
+
+# ── 操作系统 / 编辑器杂项 ─────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
